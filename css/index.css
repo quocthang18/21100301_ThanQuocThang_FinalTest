@@ -309,13 +309,14 @@ footer{
         text-decoration: none;
         text-align: center;
         font-size: 20px;
+        font-weight: 600;
         display: block;
         background-color:#999 ;
         color: black;
         padding: 20px ;
         position: absolute;
         width: 250px;
-        bottom: -85px;
+        bottom: -70px;
         transition: 0.25s ease-in-out;
     }
     ul.products li:hover a.buy-now{
