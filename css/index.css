@@ -19,22 +19,58 @@ nav{
     width: 100%;
 }
 .content{
-    height: 2220px;
+    height: 2120px;
     width: 100%;
 }
 .top-menu li{
     position: absolute;
     height: 45px;
-    width: 130px;
     background-color: black;
     list-style: none;
 }
-li a{text-decoration: none;}
+li a{text-decoration: none;color: #fff;}
 .top-menu li:first-child{top: 40px;left: 30px;}
 .top-menu li:nth-child(2){top: 40px;left:170px;}
 .top-menu li:nth-child(3){top: 40px;left:310px;}
-.top-menu li:nth-child(4){top: 40px;right:0px;}
-.top-menu li:last-child{top: 40px;right:140px;}    
+.top-menu li:nth-child(4){top: 40px;right:30px;}
+.top-menu li:last-child{top: 40px;right:170px;}    
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, .4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 section{
     width: 25%;
     height: 450px;
@@ -107,7 +143,7 @@ section{
       .text {font-size: 11px}
     }
 aside{
-    width: 74%;
+    width: 73%;
     height: 450px;
     float:left
 }
@@ -134,7 +170,7 @@ ul#menu1 li a{
     border: 1px solid red;
 }
 footer{
-        width: 100%;
+        width: 1499px;
         height: auto;
         padding: 10px 10px;
         background: black;
@@ -147,7 +183,7 @@ footer{
         margin-right: 20px;
     }
     footer  .container .noi-dung.about{
-        width:40%;
+        width:35%;
         padding-left: 40px;
         padding-top: 20px;
     }
@@ -161,7 +197,7 @@ footer{
         position: absolute;
         bottom: -5px;
         left: 0;
-        width: 60px;
+        width: 50px;
         height: 3px;
         background: #f00;
     }
@@ -200,7 +236,7 @@ footer{
         position: absolute;
         bottom: -5px;
         left: 0;
-        width: 60px;
+        width: 55px;
         height: 3px;
         background: #f00;
     }
@@ -233,8 +269,7 @@ footer{
         background: #f00;
     }
     .contact{
-        width: calc(35% - 60px);
-        margin-right: 0px !important;
+        width: 35%;
     }
     .contact .info{
         position: relative;
@@ -293,8 +328,7 @@ footer{
     }
     ul.products li img{
         max-width: 100%;
-        height: 490px;
-        margin-bottom: 10px;
+        height: 470px;
     }
     ul.products li .product-top{
         position: relative;
@@ -306,31 +340,30 @@ footer{
     }
     ul.products li .product-top a.buy-now{
         text-transform: uppercase;
-        text-decoration: none;
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
-        display: block;
         background-color:#999 ;
         color: black;
         padding: 20px ;
         position: absolute;
-        width: 250px;
+        width: 215px;
         bottom: -70px;
         transition: 0.25s ease-in-out;
+        margin-left: 11px;
     }
     ul.products li:hover a.buy-now{
         bottom: 0px;
     }
     ul.products li .product-info a.product-name{
         color: black;
-        padding: 10px 7px;
+        padding: 10px 15px;
         font-size: 20px;
-        padding-top: 5px;
+        
     }
     ul.products li .product-info .product-price{
         color: black;
-        padding: 10px 7px;
+        padding: 5px 15px;
         font-weight: 600;
         font-size: 20px;
     }
