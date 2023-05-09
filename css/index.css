@@ -35,56 +35,41 @@ li a{text-decoration: none;color: #fff;}
 .top-menu li:nth-child(4){top: 40px;right:30px;}
 .top-menu li:last-child{top: 40px;right:170px;}    
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, .4);
-  }
-  
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+.showcart{
+    position:static;
+    padding: 10px;
+    background-color: rgb(129, 129, 129);
+    align-items: center;
+    border: 1px #CCC solid;
+    
+
+}
 
 section{
     width: 25%;
     height: 450px;
-    float: left;}
-    .mySlides {display: none;}
-    img {vertical-align: middle;}
-    
+    float: left;
+}
+.c1{
+    width: 300px;
+    height: 100%;
+    margin-bottom: -50px;
+}
+ul#menu1 li a{
+    padding: 15px;
+    text-decoration: none;
+    color:black;
+}
+.boder1{
+    height: 50px;
+    width:  320px;
+    background: white;
+    border-radius: 30px;
+    border: 1px solid red;
+}
     /* Slideshow container */
-    .slideshow-container {
-      display: block;
-      max-width: 100%;
-      position: relative;
-      margin: auto;
-      clear: both;
+    .slideshow-container { 
+    max-width: 100%;
     position: relative;
     -webkit-transition: left 5s;
     -moz-transition: left 5s;
@@ -144,31 +129,10 @@ section{
     }
 aside{
     width: 73%;
-    height: 450px;
-    float:left
+    height: 100%;
+    float:left;
 }
-.c1{width: 370px;
-    height: 422px;
-    float:left
-}
-.c2{width: 230px;
-    height: 422px;
-    float:left
-}
-ul#menu1 li a{
-    list-style: none;
-    padding: 12px 15px;
-    text-decoration: none;
-    color:black;
-    font-family: arial;
-}
-.boder1{
-    height: 50px;
-    width:  320px;
-    background: white;
-    border-radius: 30px;
-    border: 1px solid red;
-}
+
 footer{
         width: 1499px;
         height: auto;
@@ -334,6 +298,7 @@ footer{
         position: relative;
         overflow: hidden;
         padding-top: 15px;
+        margin-bottom: 10px;
     }
     ul.products li .product-top .product-thumb img{
         display: block;
@@ -358,12 +323,12 @@ footer{
     ul.products li .product-info a.product-name{
         color: black;
         padding: 10px 15px;
+        font-weight: 600;
         font-size: 20px;
         
     }
     ul.products li .product-info .product-price{
         color: black;
         padding: 5px 15px;
-        font-weight: 600;
-        font-size: 20px;
+        font-size: 17px;
     }
